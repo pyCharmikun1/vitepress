@@ -45,7 +45,14 @@
 
 /* 移动端响应式布局 */
 @media (max-width: 960px) {
+  /* 防止 Features 部分遮挡主页内容 */
+  .VPHome {
+    padding-bottom: 3rem !important;
+  }
+
   .VPHero {
+    padding-top: 2rem !important;
+    min-height: calc(100vh - 200px) !important;
     flex-direction: column !important;
     gap: 2rem !important;
   }
@@ -53,12 +60,15 @@
   .VPHero .container {
     flex-direction: column-reverse !important;
     gap: 2rem !important;
+    padding-bottom: 4rem !important;
   }
   
   .VPHero .image {
-    margin-top: 2rem !important;
-    width: 160px !important; /* 手机端稍微缩小图片 */
+    margin: 2rem auto !important;
+    width: 160px !important;
     height: 160px !important;
+    position: relative !important;
+    z-index: 2 !important;
   }
 
   .VPHero .main {
@@ -66,6 +76,14 @@
     text-align: center !important;
     padding-left: 0 !important;
     width: 100% !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .VPHome .VPFeatures {
+    margin-top: 1rem !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
 
   .VPHero .name,
@@ -77,6 +95,7 @@
 
   .VPHero .actions {
     justify-content: center !important;
+    margin-top: 1.5rem !important;
   }
 }
 
