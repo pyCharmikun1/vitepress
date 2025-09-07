@@ -1,6 +1,6 @@
 # Markdown 扩展示例
 
-本文展示VitePress内置的Markdown扩展功能123456。
+本文展示VitePress内置的Markdown扩展功能
 
 ## 语法高亮
 
