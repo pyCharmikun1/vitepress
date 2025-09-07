@@ -27,6 +27,17 @@
   line-height: 1.4;
 }
 
+/* 主页 Logo 样式 */
+.VPHero .image {
+  width: 200px !important;
+  height: 200px !important;
+  transform: translateY(-10px); /* 稍微向上偏移一点 */
+}
+
+.VPHero .image-container {
+  transform: none !important;
+}
+
 .demo-component {
   padding: 1rem;
   margin: 1rem 0;
