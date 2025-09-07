@@ -4,6 +4,11 @@
   --vp-c-brand-light: #747bff;
 }
 
+/* 移除 VPContent 的默认内边距 */
+.VPContent {
+  padding: 0 !important;
+}
+
 /* 导航栏标题渐变色 */
 .VPNavBarTitle .title {
   background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
