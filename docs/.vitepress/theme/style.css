@@ -21,6 +21,12 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* 调整主页文字大小 */
+.VPHero .text {
+  font-size: 1.2em !important; /* 调小标语文字大小 */
+  line-height: 1.4;
+}
+
 .demo-component {
   padding: 1rem;
   margin: 1rem 0;
