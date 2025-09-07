@@ -7,7 +7,7 @@ titleTemplate: 在数字世界的角落，专注于美好的事物 # 标题模�
 
 hero:
   name: "不爱剪辑的Y"
-  text: "在数字世界的角落"
+  text: "在数字世界的角落，专注于美好的事物"
   tagline: 探索技术、分享知识、记录生活点滴
   actions:
     - theme: brand
