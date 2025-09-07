@@ -38,6 +38,43 @@
   transform: none !important;
 }
 
+/* 移动端响应式布局 */
+@media (max-width: 960px) {
+  .VPHero {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+  
+  .VPHero .container {
+    flex-direction: column-reverse !important;
+    gap: 2rem !important;
+  }
+  
+  .VPHero .image {
+    margin-top: 2rem !important;
+    width: 160px !important; /* 手机端稍微缩小图片 */
+    height: 160px !important;
+  }
+
+  .VPHero .main {
+    margin-top: 0 !important;
+    text-align: center !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .VPHero .name,
+  .VPHero .text,
+  .VPHero .tagline {
+    margin: auto !important;
+    text-align: center !important;
+  }
+
+  .VPHero .actions {
+    justify-content: center !important;
+  }
+}
+
 .demo-component {
   padding: 1rem;
   margin: 1rem 0;
