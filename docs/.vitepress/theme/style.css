@@ -33,14 +33,51 @@
 }
 
 /* 主页 Logo 样式 */
+.VPHero .image-container {
+  position: relative !important;
+  transform: none !important;
+}
+
 .VPHero .image {
   width: 200px !important;
   height: 200px !important;
-  transform: translateY(-10px); /* 稍微向上偏移一点 */
+  transform: translateY(-10px) !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
-.VPHero .image-container {
-  transform: none !important;
+/* Logo 光晕效果 */
+.VPHero .image-container::before {
+  content: '';
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, calc(-50% - 10px)) !important;
+  width: 280px !important;
+  height: 280px !important;
+  background: radial-gradient(
+    circle at center,
+    rgba(189, 52, 254, 0.1) 0%,
+    rgba(65, 209, 255, 0.1) 25%,
+    rgba(189, 52, 254, 0.05) 50%,
+    rgba(65, 209, 255, 0.02) 75%,
+    transparent 100%
+  ) !important;
+  border-radius: 50% !important;
+  z-index: 1 !important;
+  animation: pulse 4s ease-in-out infinite !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, calc(-50% - 10px)) scale(0.95) !important;
+  }
+  50% {
+    transform: translate(-50%, calc(-50% - 10px)) scale(1.05) !important;
+  }
+  100% {
+    transform: translate(-50%, calc(-50% - 10px)) scale(0.95) !important;
+  }
 }
 
 /* 移动端响应式布局 */
