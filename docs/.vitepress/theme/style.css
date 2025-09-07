@@ -53,20 +53,22 @@
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, calc(-50% - 10px)) !important;
-  width: 280px !important;
-  height: 280px !important;
+  width: 300px !important;  /* 增加光晕范围 */
+  height: 300px !important;
   background: radial-gradient(
     circle at center,
-    rgba(62, 175, 124, 0.25) 0%,    /* 使用主题绿色，更深的透明度 */
-    rgba(62, 175, 124, 0.2) 20%,
-    rgba(62, 175, 124, 0.15) 40%,
-    rgba(62, 175, 124, 0.1) 60%,
-    rgba(62, 175, 124, 0.05) 80%,
+    transparent 35%,          /* 中心透明，不遮挡图片 */
+    rgba(100, 108, 255, 0.3) 40%,  /* 从图片边缘开始，较深的颜色 */
+    rgba(100, 108, 255, 0.2) 50%,
+    rgba(100, 108, 255, 0.15) 60%,
+    rgba(100, 108, 255, 0.1) 70%,
+    rgba(100, 108, 255, 0.05) 80%,
     transparent 100%
   ) !important;
   border-radius: 50% !important;
   z-index: 1 !important;
   animation: pulse 4s ease-in-out infinite !important;
+  pointer-events: none !important; /* 确保光晕不影响交互 */
 }
 
 @keyframes pulse {
