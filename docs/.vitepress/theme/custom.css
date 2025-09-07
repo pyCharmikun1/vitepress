@@ -1,0 +1,24 @@
+/* .vitepress/theme/custom.css */
+
+/* 标题渐变色 */
+.VPNavBarTitle .title {
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+/* 主页标题渐变色 */
+.VPHero .name,
+.VPHero .text {
+  background: linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 主页标语颜色 */
+.VPHero .tagline {
+  color: var(--vp-c-text-2);
+}
