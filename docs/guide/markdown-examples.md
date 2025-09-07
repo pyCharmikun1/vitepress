@@ -2,7 +2,7 @@
 
 本文展示VitePress内置的Markdown扩展功能
 
-## 语法高亮
+## 1语法高亮
 
 VitePress使用[Shiki](https://github.com/shikijs/shiki)提供语法高亮功能，并支持行号高亮：
 
