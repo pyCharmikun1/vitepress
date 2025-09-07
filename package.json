@@ -1,8 +1,5 @@
 {
   "devDependencies": {
-    "vitepress": "2.0.0-alpha.12"
-  },
-  "devDependencies": {
     "vitepress": "2.0.0-alpha.12",
     "gh-pages": "^4.0.0"
   },

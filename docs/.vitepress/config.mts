@@ -5,6 +5,7 @@ export default defineConfig({
   title: "不爱剪辑的Y",
   description: "在数字世界的角落，专注于美好的事物",
   lang: 'zh-CN',
+  base: '/vitepress/',  // 添加这行，设置基础路径为仓库名
   locales: {
     '/': {
       lang: 'zh-CN',
@@ -38,10 +39,6 @@ export default defineConfig({
           { text: 'API使用示例', link: '/guide/api-examples' }
         ]
       }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/pycharmikun1' }
     ]
   }
 })
