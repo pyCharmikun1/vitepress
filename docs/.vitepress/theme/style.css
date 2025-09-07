@@ -57,10 +57,11 @@
   height: 280px !important;
   background: radial-gradient(
     circle at center,
-    rgba(189, 52, 254, 0.1) 0%,
-    rgba(65, 209, 255, 0.1) 25%,
-    rgba(189, 52, 254, 0.05) 50%,
-    rgba(65, 209, 255, 0.02) 75%,
+    rgba(62, 175, 124, 0.25) 0%,    /* 使用主题绿色，更深的透明度 */
+    rgba(62, 175, 124, 0.2) 20%,
+    rgba(62, 175, 124, 0.15) 40%,
+    rgba(62, 175, 124, 0.1) 60%,
+    rgba(62, 175, 124, 0.05) 80%,
     transparent 100%
   ) !important;
   border-radius: 50% !important;
